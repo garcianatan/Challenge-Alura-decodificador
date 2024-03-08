@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css">
+    <title>Decodificador</title>
+</head>
+<body>
+    <header></header>
+    <main class="principal">
+        <section class="principal__conteudo">
+            <!-- <input class="principal__conteudo__texto" type="text" placeholder="Digite seu texto"> -->
+            <textarea class="principal__conteudo__texto" placeholder="Digite seu texto" cols="30" rows="3"></textarea>
+            <div class="principal__conteudo__avisoebotoes">
+                <p class="principal__conteudo__aviso"><strong>OBS:</strong> Apenas letras minúsculas e sem acento</p>
+                <div class="principal__conteudo__botoes">
+                    <button onclick = "criptografar()" class="principal__conteudo__botoes__cripto">Criptografar</button>
+                    <button onclick="descriptografar()" class="principal__conteudo__botoes__descripto">Descriptografar</button>
+                </div>
+            </div>
+        </section>
+        <aside class="principal__lateral">
+            <img class="principal__lateral__imagem" src="./assets/1.png" alt="Ilustração de uma pessoa explorando um objeto com uma lupa">
+            <h1 class="principal__lateral__titulo">Nenhuma mensagem encontrada</h1>
+            <p class="principal__lateral__paragrafo">Digite um texto que você deseja criptografar ou descriptografar.</p>
+            <button onclick="copiar()" class="principal__lateral__botao">Copiar</button>
+        </aside>
+    </main>
+    <footer class="rodape">
+        <p>Desenvolvido por Natan Rodrigues. 2024.</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
